@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		AAF9308B23D7035300CC5D09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF9308A23D7035300CC5D09 /* AppDelegate.swift */; };
-		AAF9308D23D7035300CC5D09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF9308C23D7035300CC5D09 /* SceneDelegate.swift */; };
 		AAF9308F23D7035300CC5D09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF9308E23D7035300CC5D09 /* ViewController.swift */; };
 		AAF9309223D7035300CC5D09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF9309023D7035300CC5D09 /* Main.storyboard */; };
 		AAF9309423D7035500CC5D09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAF9309323D7035500CC5D09 /* Assets.xcassets */; };
 		AAF9309723D7035500CC5D09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF9309523D7035500CC5D09 /* LaunchScreen.storyboard */; };
+		AAF9309F23D7075D00CC5D09 /* PhotoCaptureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF9309E23D7075D00CC5D09 /* PhotoCaptureManager.swift */; };
+		AAF930A123D707D800CC5D09 /* RectangleRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF930A023D707D800CC5D09 /* RectangleRecognizer.swift */; };
+		AAF930A323D70A2600CC5D09 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF930A223D70A2600CC5D09 /* PreviewView.swift */; };
+		AAF930A523D70C9A00CC5D09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF930A423D70C9800CC5D09 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AAF9308723D7035300CC5D09 /* Perspective Photo Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Perspective Photo Animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF9308A23D7035300CC5D09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AAF9308C23D7035300CC5D09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AAF9308E23D7035300CC5D09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AAF9309123D7035300CC5D09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAF9309323D7035500CC5D09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAF9309623D7035500CC5D09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAF9309823D7035500CC5D09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAF9309E23D7075D00CC5D09 /* PhotoCaptureManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureManager.swift; sourceTree = "<group>"; };
+		AAF930A023D707D800CC5D09 /* RectangleRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleRecognizer.swift; sourceTree = "<group>"; };
+		AAF930A223D70A2600CC5D09 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		AAF930A423D70C9800CC5D09 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +63,15 @@
 			isa = PBXGroup;
 			children = (
 				AAF9308A23D7035300CC5D09 /* AppDelegate.swift */,
-				AAF9308C23D7035300CC5D09 /* SceneDelegate.swift */,
-				AAF9308E23D7035300CC5D09 /* ViewController.swift */,
-				AAF9309023D7035300CC5D09 /* Main.storyboard */,
 				AAF9309323D7035500CC5D09 /* Assets.xcassets */,
-				AAF9309523D7035500CC5D09 /* LaunchScreen.storyboard */,
 				AAF9309823D7035500CC5D09 /* Info.plist */,
+				AAF9309523D7035500CC5D09 /* LaunchScreen.storyboard */,
+				AAF9309023D7035300CC5D09 /* Main.storyboard */,
+				AAF9309E23D7075D00CC5D09 /* PhotoCaptureManager.swift */,
+				AAF930A223D70A2600CC5D09 /* PreviewView.swift */,
+				AAF930A023D707D800CC5D09 /* RectangleRecognizer.swift */,
+				AAF930A423D70C9800CC5D09 /* SceneDelegate.swift */,
+				AAF9308E23D7035300CC5D09 /* ViewController.swift */,
 			);
 			path = "Perspective Photo Animation";
 			sourceTree = "<group>";
@@ -138,9 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAF930A323D70A2600CC5D09 /* PreviewView.swift in Sources */,
 				AAF9308F23D7035300CC5D09 /* ViewController.swift in Sources */,
+				AAF9309F23D7075D00CC5D09 /* PhotoCaptureManager.swift in Sources */,
 				AAF9308B23D7035300CC5D09 /* AppDelegate.swift in Sources */,
-				AAF9308D23D7035300CC5D09 /* SceneDelegate.swift in Sources */,
+				AAF930A123D707D800CC5D09 /* RectangleRecognizer.swift in Sources */,
+				AAF930A523D70C9A00CC5D09 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,6 +299,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R3GMKV289J;
 				INFOPLIST_FILE = "Perspective Photo Animation/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ivanvavilov.Perspective-Photo-Animation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R3GMKV289J;
 				INFOPLIST_FILE = "Perspective Photo Animation/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ivanvavilov.Perspective-Photo-Animation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
