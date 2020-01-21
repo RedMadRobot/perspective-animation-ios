@@ -11,6 +11,8 @@ import UIKit
 
 final class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
 
+    @IBOutlet private var previewView: PreviewView!
+    
     private var bufferSize: CGSize = .zero
     private lazy var session = AVCaptureSession()
     private lazy var photoCaptureManager = PhotoCaptureManager(session: session)
@@ -23,6 +25,7 @@ final class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         super.viewDidLoad()
         
         setupSession()
+        previewView.session = session
     }
     
     override func viewWillAppear(_ animated: Bool) {
