@@ -1,7 +1,5 @@
 import UIKit
 
-// swiftlint:disable operator_usage_whitespace function_body_length identifier_name line_length superfluous_disable_command comma
-
 /// Quadrilateral in the 3D
 struct Quadrilateral {
     

@@ -10,9 +10,7 @@ final class PreviewView: UIView {
     
     var videoPreviewLayer: AVCaptureVideoPreviewLayer {
         guard let layer = layer as? AVCaptureVideoPreviewLayer else {
-            fatalError("""
-            Expected `AVCaptureVideoPreviewLayer` type for layer. Check PreviewView.layerClass implementation.
-            """)
+            fatalError("Expected `AVCaptureVideoPreviewLayer` type for layer. Check PreviewView.layerClass implementation.")
         }
         return layer
     }

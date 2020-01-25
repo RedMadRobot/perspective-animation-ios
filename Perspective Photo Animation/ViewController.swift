@@ -11,12 +11,18 @@ import UIKit
 
 final class ViewController: UIViewController {
 
+    // MARK: - Constants
+    
     private enum Constants {
         static let leftSpace: CGFloat = 56
         static let imageAspectRatio: CGFloat = 0.43
     }
     
+    // MARK: - Outlets
+    
     @IBOutlet private var previewView: PreviewView!
+    
+    // MARK: - Private Properties
     
     private var bufferSize: CGSize = .zero
     private lazy var session = AVCaptureSession()
@@ -27,6 +33,8 @@ final class ViewController: UIViewController {
     private var detectionOverlay: CALayer!
     private var rectanglePoints = [CGPoint]()
     private var isRecognizing: Bool = false
+    
+    // MARK: - UIViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,11 +56,15 @@ final class ViewController: UIViewController {
         session.stopRunning()
     }
     
+    // MARK: - UI Actions
+    
     @IBAction private func shot() {
         photoCaptureManager.makePhoto { [weak self] in
             self?.recognizeBlank($0)
         }
     }
+    
+    // MARK: - Private
     
     private func setupSession() {
         guard let deviceInput = selectVideoDeviceAsInput() else {
@@ -195,9 +207,7 @@ final class ViewController: UIViewController {
     }
     
     private func createPolygon(_ normalizedPoints: [CGPoint], for frame: CGSize) -> CALayer {
-        guard !normalizedPoints.isEmpty else {
-            return CALayer()
-        }
+        guard !normalizedPoints.isEmpty else { return CALayer() }
         
         let shape = CAShapeLayer()
         shape.opacity = 0.5
@@ -224,7 +234,6 @@ final class ViewController: UIViewController {
 extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
-        
         rectangleRecognizer.performRequest(for: pixelBuffer, orientation: exifOrientationFromDeviceOrientation())
     }
 }

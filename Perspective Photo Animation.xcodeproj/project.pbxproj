@@ -64,7 +64,6 @@
 		AAF9308923D7035300CC5D09 /* Perspective Photo Animation */ = {
 			isa = PBXGroup;
 			children = (
-				AAB071C323D742E4003C6DCD /* Quadrilateral.swift */,
 				AAF9308A23D7035300CC5D09 /* AppDelegate.swift */,
 				AAF9309323D7035500CC5D09 /* Assets.xcassets */,
 				AAF9309823D7035500CC5D09 /* Info.plist */,
@@ -72,6 +71,7 @@
 				AAF9309023D7035300CC5D09 /* Main.storyboard */,
 				AAF9309E23D7075D00CC5D09 /* PhotoCaptureManager.swift */,
 				AAF930A223D70A2600CC5D09 /* PreviewView.swift */,
+				AAB071C323D742E4003C6DCD /* Quadrilateral.swift */,
 				AAF930A023D707D800CC5D09 /* RectangleRecognizer.swift */,
 				AAF930A423D70C9800CC5D09 /* SceneDelegate.swift */,
 				AAF9308E23D7035300CC5D09 /* ViewController.swift */,
