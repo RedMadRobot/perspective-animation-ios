@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAB071C423D742E4003C6DCD /* Quadrilateral.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB071C323D742E4003C6DCD /* Quadrilateral.swift */; };
 		AAF9308B23D7035300CC5D09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF9308A23D7035300CC5D09 /* AppDelegate.swift */; };
 		AAF9308F23D7035300CC5D09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF9308E23D7035300CC5D09 /* ViewController.swift */; };
 		AAF9309223D7035300CC5D09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF9309023D7035300CC5D09 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AAB071C323D742E4003C6DCD /* Quadrilateral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quadrilateral.swift; sourceTree = "<group>"; };
 		AAF9308723D7035300CC5D09 /* Perspective Photo Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Perspective Photo Animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF9308A23D7035300CC5D09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAF9308E23D7035300CC5D09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		AAF9308923D7035300CC5D09 /* Perspective Photo Animation */ = {
 			isa = PBXGroup;
 			children = (
+				AAB071C323D742E4003C6DCD /* Quadrilateral.swift */,
 				AAF9308A23D7035300CC5D09 /* AppDelegate.swift */,
 				AAF9309323D7035500CC5D09 /* Assets.xcassets */,
 				AAF9309823D7035500CC5D09 /* Info.plist */,
@@ -149,6 +152,7 @@
 			files = (
 				AAF930A323D70A2600CC5D09 /* PreviewView.swift in Sources */,
 				AAF9308F23D7035300CC5D09 /* ViewController.swift in Sources */,
+				AAB071C423D742E4003C6DCD /* Quadrilateral.swift in Sources */,
 				AAF9309F23D7075D00CC5D09 /* PhotoCaptureManager.swift in Sources */,
 				AAF9308B23D7035300CC5D09 /* AppDelegate.swift in Sources */,
 				AAF930A123D707D800CC5D09 /* RectangleRecognizer.swift in Sources */,

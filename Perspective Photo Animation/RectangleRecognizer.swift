@@ -96,15 +96,14 @@ final class RectangleRecognizer {
     }
 }
 
-extension VNRectangleObservation {
-    
-    /// Clockwise route from topLeft to bottomLeft
+extension VNRectangleObservation {    
+    /// Clockwise route from topLeft to bottomLeft with 90 degree rotation
     var points: [CGPoint] {
-        return [topLeft, topRight, bottomRight, bottomLeft]
+        return [bottomLeft, topLeft, topRight, bottomRight]
     }
 }
 
-private extension CGRect {
+extension CGRect {
     func scaled(to size: CGSize) -> CGRect {
         return CGRect(
             x: self.origin.x * size.width,
@@ -115,7 +114,7 @@ private extension CGRect {
     }
 }
 
-private extension CGPoint {
+extension CGPoint {
     func scaled(to size: CGSize) -> CGPoint {
         return CGPoint(x: self.x * size.width, y: self.y * size.height)
     }
