@@ -4,6 +4,8 @@ Example of perspective animation of a photo.
 
 This is an implementation of how to detect a rectangle from a camera and animate a perspective.
 
+![](demo.gif)
+
 ## Used frameworks
 
 * `AVFoundation` for taking a photo.
