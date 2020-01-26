@@ -1,5 +1,7 @@
 ![](header.svg)
-# Perspective Animation
+# 📱 Perspective Animation
+
+[![Redmadrobot](https://img.shields.io/badge/made%20by%20robots-for%20humans-EB5440.svg)](https://github.com/RedMadRobot) [![License](https://img.shields.io/cocoapods/l/PrioritizedTabBar.svg?style=flat)]() [![Platform](https://img.shields.io/cocoapods/p/PrioritizedTabBar.svg?style=flat)]()
 
 Example of perspective animation of a photo.
 
